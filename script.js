@@ -1,7 +1,9 @@
-let inches = prompt("Enter your height in inches");
+//let inches = prompt("Enter your height in inches");
+let inches = document.getElementById("height").value;
 inches = Number(inches);
 console.log(inches);
-let pounds = prompt("enter your weight in pounds");
+//let pounds = prompt("enter your weight in pounds");
+let pounds = document.getElementById("weight").value;
 pounds = Number(pounds);
 console.log(pounds);
 let centimeters = (inches * 2.54) ** 2; //centimeter conversion is in brackets. The additional square is a modification adjusted for the meters

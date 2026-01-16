@@ -6,13 +6,19 @@ console.log(inches);
 let pounds = document.getElementById("weight").value;
 pounds = Number(pounds);
 console.log(pounds);
-let centimeters = inches * 2.54;
-console.log(centimeters);
-let meters = centimeters / 100;
-console.log(meters);
-let kilograms = pounds / 2.2046;
-console.log(kilograms);
+let button = document.getElementById("calculate");
+function calculateBMI() {
+  let centimeters = inches * 2.54;
+  console.log(centimeters);
+  let meters = centimeters / 100;
+  console.log(meters);
+  let kilograms = pounds / 2.2046;
+  console.log(kilograms);
 
-let BMI = kilograms / meters ** 2; //this returns a ridiculously large number
-//console.log(meters ** 2);
-console.log(BMI);
+  let BMI = kilograms / meters ** 2;
+  console.log(BMI);
+  let answer = document.getElementById("answer");
+  answer.innerHTML = `BMI: ${BMI}`;
+}
+button.addEventListener("click", calculateBMI());
+//crashes coz it cannot fetch the user input value as a number (or at all?) FIX IT!

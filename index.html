@@ -7,18 +7,20 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>BMI calculator</h1>
-    <label for="height">Enter your height:</label>
-    <input type="text" id="height" />
-    <br />
-    <label for="weight">Enter your weight:</label>
-    <input type="text" id="weight" />
-    <br />
+    <div id="container">
+      <h1>BMI calculator</h1>
+      <label for="height">Enter your height:</label>
+      <input type="text" id="height" />
+      <br />
+      <label for="weight">Enter your weight:</label>
+      <input type="text" id="weight" />
+      <br />
 
-    <button type="button" id="calculate" onclick="calculateBMI()">
-      calculate BMI
-    </button>
-    <p id="answer">BMI:</p>
+      <button type="button" id="calculate" onclick="calculateBMI()">
+        calculate BMI
+      </button>
+      <p id="answer">BMI:</p>
+    </div>
   </body>
   <script src="script.js"></script>
 </html>

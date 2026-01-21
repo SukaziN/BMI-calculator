@@ -1,14 +1,24 @@
 body {
   line-height: 2em;
-  text-align: center;
 }
 button {
+  margin-top: 10px;
   height: 30px;
   background-color: rgb(3, 3, 160);
   color: white;
   border: none;
   border-radius: 10px;
+  font-size: 1.2rem;
 }
 button:hover {
   background-color: blue;
+}
+#container {
+  height: auto;
+  width: 50vw;
+  background-color: rgba(127, 255, 212, 0.116);
+  padding: 30px;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
 }

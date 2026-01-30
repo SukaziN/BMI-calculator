@@ -8,3 +8,4 @@ function calculateBMI() {
   let answer = document.getElementById("answer");
   answer.innerHTML = `BMI: ${BMI}`;
 }
+//for target market purposes, areas using pounds and inches are socially more inclined to utilize weight checking tools and due to their diets are more prone to incur unhealthy BMIs hence the measurement unit for the end-user
